@@ -1,15 +1,34 @@
+"use client";
+import { useState } from "react";
+
 export default function SidebarMenuList({ menus }) {
+  const [menuIndex, setMenuIndex] = useState(0);
+
+  const handleClickMenu = (index) => {
+    setMenuIndex(index);
+  };
   return (
     <>
-      <ul>
-        {menus.map((menu, index) => {
-          return (
-            <>
-              <li className="py-2 my-1 bg-gray-300 hover:bg-orange-400 cursor-pointer">{menu.name}</li>
-            </>
-          );
-        })}
-      </ul>
+      {menus.map((menu, index) => {
+        return (
+          <ul className="w-64" key={index}>
+            {/* 一级菜单 */}
+            <li className="p-2  cursor-pointer" onClick={() => handleClickMenu(index)}>
+              <div className="text-black font-bold">{menu.name}</div>
+              {/* 子菜单 */}
+              <ul className="overflow-hidden transition  duration-200" style={{ height: menuIndex == index ? "auto" : 0 }}>
+                {menu.children.map((child, i) => {
+                  return (
+                    <li key={i} className="p-2 rounded-lg hover:bg-gray-100 cursor-pointer">
+                      {child.name}
+                    </li>
+                  );
+                })}
+              </ul>
+            </li>
+          </ul>
+        );
+      })}
     </>
   );
 }

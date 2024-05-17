@@ -1,3 +1,5 @@
+import Sidebar from "@/components/layout/Sidebar";
+import Header from "@/components/layout/Header";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -14,7 +16,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html className={inter.className}>
-      <body>{children}</body>
+      <body>
+        {/* 头部导航 */}
+        <Header />
+        <div className="flex px-6 py-10">
+          {/* 侧边栏 */}
+          <Sidebar />
+          {/* 主体 */}
+          <div className="px-6">{children}</div>
+        </div>
+      </body>
     </html>
   );
 }

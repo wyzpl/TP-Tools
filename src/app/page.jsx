@@ -1,11 +1,5 @@
-import Layout from "@/components/layout";
+import NavCards from "@/components/NavCards";
 
-const Home = () => {
-  return (
-    <Layout>
-      <h1>Home Page</h1>
-    </Layout>
-  );
-};
+const Home = () => <NavCards />;
 
 export default Home;
