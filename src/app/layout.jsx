@@ -19,12 +19,7 @@ export default function RootLayout({ children }) {
       <body>
         {/* 头部导航 */}
         <Header />
-        <div className="flex px-6 py-10">
-          {/* 侧边栏 */}
-          <Sidebar />
-          {/* 主体 */}
-          <div className="px-6">{children}</div>
-        </div>
+        <div className="px-6 py-10">{children}</div>
       </body>
     </html>
   );

@@ -1,5 +1,3 @@
-import NavCards from "@/components/NavCards";
-
-const Home = () => <NavCards />;
+const Home = () => <h1>Home Page</h1>;
 
 export default Home;

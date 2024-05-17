@@ -6,7 +6,7 @@ export default function HeaderMenuList({ menuItems }) {
       {menuItems.map((item, index) => (
         <li key={index}>
           <Link href={item.href}>
-            <div className="text-sm font-semibold leading-6 text-gray-900">{item.name}</div>
+            <div className="text-sm font-semibold leading-6 text-gray-500">{item.name}</div>
           </Link>
         </li>
       ))}
