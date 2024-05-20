@@ -26,8 +26,11 @@ export default function Header() {
   /* 切换导航栏选中效果 */
   const handleMenuClick = (i) => {
     const newMenuList = [...menuList];
-    newMenuList.map((menu) => (menu.isActive = false));
-    newMenuList[i].isActive = true;
+    if (!newMenuList[i].external) {
+      newMenuList.map((menu) => (menu.isActive = false));
+      // 内部地址选中
+      newMenuList[i].isActive = true;
+    }
     setMenuList(newMenuList);
   };
   return (

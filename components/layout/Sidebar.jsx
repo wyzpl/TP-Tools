@@ -15,26 +15,6 @@ export default function Sidebar() {
         { name: "Home5", link: "/" },
       ],
     },
-    {
-      name: "About",
-      link: "/about",
-      children: [
-        { name: "Home22", link: "/" },
-        { name: "Home32", link: "/" },
-        { name: "Home56", link: "/" },
-        { name: "Home32", link: "/" },
-        { name: "Home55", link: "/" },
-      ],
-    },
-    {
-      name: "Contact",
-      link: "/contact",
-      children: [
-        { name: "Home11", link: "/" },
-        { name: "Home21", link: "/" },
-        { name: "Home31", link: "/" },
-      ],
-    },
   ];
   return (
     <>

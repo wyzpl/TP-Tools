@@ -9,7 +9,7 @@ export default function HeaderMenuList({ menuItems, onMenuClick }) {
       {menuItems.map((item, index) => (
         <li key={index} onClick={() => onMenuClick(index)} className="relative">
           <Link href={item.href} target={item.external ? "_blank" : "_self"}>
-            <div className={classNames({ "text-gray-900 font-bold": item.isActive }, "text-sm leading-6 text-gray-500")}>{item.name}</div>
+            <div className={classNames({ "text-purple-600 font-bold": item.isActive }, "text-sm leading-6 text-gray-500")}>{item.name}</div>
             {item.external && (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
