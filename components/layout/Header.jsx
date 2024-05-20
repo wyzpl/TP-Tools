@@ -17,18 +17,9 @@ export default function Header() {
     },
     {
       name: "博客",
-      href: "/blog",
+      href: "https://wyzpl.github.io/blog/",
       isActive: false,
-    },
-    {
-      name: "社区",
-      href: "#",
-      isActive: false,
-    },
-    {
-      name: "案例",
-      href: "#",
-      isActive: false,
+      external: true,
     },
   ]);
 

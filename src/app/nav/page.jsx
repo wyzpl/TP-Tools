@@ -1,4 +1,4 @@
-import NavCards from "@/components/NavCards";
+import NavCards from "@/components/nav/NavCards";
 
 const Home = () => <NavCards />;
 

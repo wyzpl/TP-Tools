@@ -11,7 +11,7 @@ export default function SidebarMenuList({ menus }) {
     <>
       {menus.map((menu, index) => {
         return (
-          <ul className="w-64" key={index}>
+          <ul className="min-w-52" key={index}>
             {/* 一级菜单 */}
             <li className="p-2  cursor-pointer" onClick={() => handleClickMenu(index)}>
               <div className="text-black font-bold">{menu.name}</div>

@@ -6,7 +6,10 @@ export default function NavCard({ card }) {
     window.open(card.link, "_blank", "noopener,noreferrer");
   };
   return (
-    <div className="rounded-lg bg-gray-100 p-4 w-80 h-32 cursor-pointer hover:scale-105" onClick={handleClickOpen}>
+    <div
+      className="rounded-lg bg-gray-100 p-4 w-80 h-32 cursor-pointer hover:scale-105 hover:shadow-lg hover:shadow-gray-200 transition-transform"
+      onClick={handleClickOpen}
+    >
       <div className="flex items-center  gap-2">
         <img src={card.logo} width="48px" height="48px" alt="logo" />
         <div className="font-bold text-xl">{card.name}</div>
