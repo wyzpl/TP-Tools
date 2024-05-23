@@ -16,10 +16,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html className={inter.className}>
+      <head>
+        <link rel="icon" href="/logo.png" sizes="any" />
+      </head>
       <body>
         {/* 头部导航 */}
-        <Header />
-        <div className="px-6 py-10">{children}</div>
+        {/* <Header /> */}
+        <div>{children}</div>
       </body>
     </html>
   );
