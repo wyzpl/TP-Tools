@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
 import classNames from "classnames";
 
 export default function HeaderMenuList({ menuItems, onMenuClick }) {

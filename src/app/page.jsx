@@ -29,7 +29,7 @@ const Home = () => {
           <a className="blog w-30 overflow-hidden" href="/">
             <h1 className="font-bold text-xl bg-gray-100 w-[100px] flex">
               <span>&nbsp;植树&nbsp;</span>
-              <span className="bg-black text-white text-lg">&nbsp;DEV&nbsp;</span>
+              <span className="bg-purple-500 text-white text-lg">&nbsp;DEV&nbsp;</span>
             </h1>
           </a>
         </div>
@@ -44,12 +44,12 @@ const Home = () => {
         </p>
         <section className="mt-12 flex justify-center space-x-4">
           <button
-            className="inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:bg-black/90 hover:scale-105 h-11 rounded-md px-8 text-lg"
+            className="inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-purple-500 text-white hover:bg-purple-500/90 hover:scale-105 h-11 rounded-md px-8 text-lg"
             type="button"
-            ariaHaspopup="dialog"
-            ariaExpanded="false"
-            ariaControls="radix-:R1qula:"
-            dataState="closed"
+            aria-haspopup="dialog"
+            aria-expanded="false"
+            aria-controls="radix-:R1qula:"
+            data-state="closed"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

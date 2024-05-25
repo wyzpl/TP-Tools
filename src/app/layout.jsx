@@ -9,8 +9,8 @@ const inter = Inter({
   display: "swap",
 });
 export const metadata = {
-  title: "Tree Planting",
-  description: "Online Tree Planting Tools",
+  title: "植树 DEV",
+  description: "Online Tree Planting Dev",
 };
 
 export default function RootLayout({ children }) {

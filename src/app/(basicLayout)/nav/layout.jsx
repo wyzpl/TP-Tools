@@ -3,7 +3,7 @@ import Header from "@/components/layout/Header";
 
 export default function NavLayout({ children }) {
   return (
-    <div className="flex px-6 py-10">
+    <div className="flex">
       {/* 侧边栏 */}
       <Sidebar />
       {/* 主体 */}
