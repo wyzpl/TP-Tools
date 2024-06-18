@@ -36,7 +36,7 @@ const Home = () => {
       </div>
       <div className="flex flex-col justify-center text-start md:text-center mx-6">
         <section className="md:flex md:justify-center">
-          <h2 className="text-4xl lg:text-5xl font-extrabold">植树计划 , &nbsp;</h2>
+          <h2 className="text-4xl lg:text-5xl font-extrabold">植树 DEV , &nbsp;</h2>
           <h2 className="text-4xl lg:text-5xl mt-2 md:mt-0"> 积土成山 积水成渊</h2>
         </section>
         <p className="leading-7 mt-6 text-lg">
